@@ -12,9 +12,10 @@ class first {
         System.out.println("value of input is: " + x);
 
         System.out.println("ebter a string type: ");
-        Scanner second = new Scanner(System.in);
-        String a = second.nextLine();
-        System.out.println("the string is: " + a + " pre val is" + x);
+        try (Scanner second = new Scanner(System.in)) {
+            String a = second.nextLine();
+            System.out.println("the string is: " + a + " pre val is" + x);
+        }
 
     }
 }
