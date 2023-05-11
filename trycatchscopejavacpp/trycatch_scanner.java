@@ -1,3 +1,4 @@
+package trycatchscopejavacpp;
 import java.util.Scanner;
 
 /**
