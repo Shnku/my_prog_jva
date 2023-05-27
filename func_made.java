@@ -6,7 +6,12 @@ class func_made {
 
     public static void main(String[] args) {
         System.out.println("\ncalling function....\n");
-        func();
+
+        func_made.func(); // ? if do this..
+        // calling function....
+        // insidr func
+
+        // func();
         // !Cannot make a static reference to the non-static method func() from the type
         // func_made
         // func_out_of_class(); //!error....
