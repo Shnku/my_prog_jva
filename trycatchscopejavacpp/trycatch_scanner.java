@@ -1,4 +1,5 @@
 package trycatchscopejavacpp;
+
 import java.util.Scanner;
 
 /**
@@ -12,13 +13,14 @@ public class trycatch_scanner {
         try (Scanner sc = new Scanner(System.in)) {
             var1 = sc.nextInt();
             var2 = sc.nextInt();
-        } catch (Exception e) {
-            System.out.println("wrong input error..");
         }
+        // catch (Exception e) {
+        // System.out.println("wrong input error..");
+        // }
 
         System.out.println("LETS CALL THE FUNC\n");
         trycatch_scanner foo = new trycatch_scanner();
-        foo.function(var1, var2); 
+        foo.function(var1, var2);
         // !problem: The local variable var1 may not have been initialized...
 
     }
