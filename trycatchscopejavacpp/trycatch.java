@@ -10,11 +10,13 @@ class trycatch {
             a = sc.nextInt();
             b = sc.nextInt();
 
-        } catch (Exception e) {
-
         }
 
         System.out.println(" a= " + a + b);
+
+        // catch(...){ //?cant do in java..
+        // System.out.println("catching all os exception at end..");
+        // }
     }
 }
 
