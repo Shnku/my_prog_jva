@@ -19,8 +19,9 @@ public class Propertrycatch {
                     System.out.println("you entered :" + number);
                     stop = true;
                 } catch (InputMismatchException e) {
-                    System.out.println("invalid input ...need integer value " + e.getMessage());
-                    scanner.nextLine();
+                    System.out.println("invalid input ...need integer value " + e);
+                    scanner.nextLine(); // ?without this fall infinite lkoop..
+                    // scuse it clears previous buffers...
                 }
             }
         }
@@ -28,3 +29,16 @@ public class Propertrycatch {
 
     }
 }
+
+// output...
+/*
+ * ava Propertrycatch.java
+ * ener ana integer :
+ * rt
+ * invalid input ...need integer value java.util.InputMismatchException
+ * ener ana integer :
+ * 5
+ * you entered :5
+ * the number is : 5
+ * >
+ */
