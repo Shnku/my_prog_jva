@@ -22,6 +22,11 @@ public class Propertrycatch {
                     System.out.println("invalid input ...need integer value " + e);
                     scanner.nextLine(); // ?without this fall infinite lkoop..
                     // scuse it clears previous buffers...
+                    /*
+                     * Without scanner.nextLine(), 
+                     * the loop would enter an infinite loop because the
+                     * invalid input would keep triggering the exception repeatedly.
+                     */
                 }
             }
         }
