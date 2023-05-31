@@ -1,11 +1,6 @@
-import java.util.Scanner;
-import java.lang.Math;
+public class alnumprogusingArray {
 
-public class AllNumberProgram {
-
-    enum nolist {
-        perfectno, krishnamurtyno, armstrongno
-    }
+    String nolist[] = { "perfectno", "krishnamurtyno", "armstrongno" };
 
     static boolean cheaker(int no, String choice) {
         int copy = no;
@@ -41,28 +36,7 @@ public class AllNumberProgram {
     static int factorial(int rem) {
         return rem == 0 ? 1 : rem + factorial(rem - 1);
     }
+    public static void main(String[] a) {
 
-    // This is the main ..
-    public static void main(String s[]) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("En the no to cheak: ");
-        int no = scanner.nextInt();
-        System.out.println("en your choice: ");
-        String choice = scanner.next();
-
-        System.out.print("is the no " + choice + " ?\t");
-        System.out.println(cheaker(no, choice));
-
-        scanner.close();
     }
 }
-
-// outpur..
-/*
- * En the no to cheak:
- * 153
- * en your choice:
- * armstrongno
- * is the no armstrongno ? true
- */
